@@ -8,6 +8,8 @@
 #define mqnic_VENDOR_ID 0x1234
 #define mqnic_DEV_ID 0x1001
 
+int mqnic_logtype_init;
+
 static int mqnic_dev_configure(struct rte_eth_dev *dev);
 static int eth_mqnic_pci_remove(struct rte_pci_device *pci_dev);
 static int eth_mqnic_pci_probe(struct rte_pci_driver *pci_drv __rte_unused, struct rte_pci_device *pci_dev);

@@ -43,7 +43,8 @@
 #define PAGE_SIZE 0x1000
 #define ETH_LEN 14
 
-int mqnic_logtype_init;
+extern int mqnic_logtype_init;
+
 #define PMD_INIT_LOG(level, fmt, args...) \
         rte_log(RTE_LOG_ ## level, mqnic_logtype_init, \
                 "%s(): " fmt "\n", __func__, ##args)
